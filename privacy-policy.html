@@ -30,22 +30,25 @@
 <body>
 <div class="wrap">
   <div class="card">
-    <div class="brand"><span class="logo">Peak</span><span class="tag">Mind · Meals · Energy</span></div>
+    <div class="brand"><span class="logo">Peak</span><span class="tag">Mind · Meals · Activity</span></div>
     <h1>Privacy Policy</h1>
     <div class="updated">Last updated: July 2026</div>
 
     <h2>What we collect</h2>
-    <p>Peak stores only what you choose to log: your username and email (for your account), your meals, activities, mood check-ins, goals, weights, height, and lifestyle selections.</p>
+    <p>Peak stores only what you choose to log: your username and email (for your account); your meals (the description or photo you provide, and the nutrition worked out from it), activities, sleep and naps, mind state, body check, eating windows, goals, weights, height, birthday, and lifestyle selections.</p>
+    <p>If you connect Apple Health, Peak also stores the workouts, sleep times, steps, and resting heart rate it reads from it, so they can appear alongside what you log by hand. Peak only ever reads from Apple Health — it never writes anything back.</p>
+    <p>If you allow notifications, your device's push token is stored so reminders can reach you. You can turn any notification off in Profile.</p>
 
     <h2>Where it lives</h2>
     <p>Your data is stored in your private, per-user account on Supabase (our database and authentication provider) and is protected by row-level security, so only you can read or write it. Passwords are handled by Supabase authentication and are never stored by Peak in plain text.</p>
 
     <h2>How Claude is used</h2>
-    <p>When you describe a meal or submit a mind check-in, that text is sent through our secure backend to Anthropic's Claude API to identify foods or generate a suggestion. It is not used to train models and is not stored by Peak beyond producing your result. Exact nutrition figures come from the USDA FoodData Central public database.</p>
+    <p>Two features send data through our secure backend to Anthropic's Claude API. When you describe or photograph a meal, that text or image is sent so the foods and portions can be identified. And a few days a week, your Guidance is written from a short summary of your own figures — things like your streak, your average sleep, and the names of the goals you've set — rather than from anything you've typed.</p>
+    <p>Nothing sent to Claude is used to train models, and none of it is stored by Peak beyond producing your result. Your mind state and body check are ratings and chips you tap, not free text, and they are never sent as text to Claude or anyone else.</p>
+    <p>Exact nutrition figures come from the USDA FoodData Central public database. Scanning a barcode looks that product up in Open Food Facts, a public food database; only the barcode number is sent.</p>
 
     <h2>Crash reports and app analytics</h2>
-    <p>So we can fix bugs and understand which parts of Peak people actually use, we rely on two more service providers: <strong>Sentry</strong> for crash and error reporting, and <strong>PostHog</strong> for product analytics. They receive technical information — your device type and app version, the details of a crash when one happens, and coarse signals such as which screen was opened or that a meal was logged — together with your Peak account identifier, so we can tell whether a problem hit one person or everyone.</p>
-    <p>They never receive the content of what you log. No meal descriptions, no mood or body-check notes, no goals, no weights, no free-form health text of any kind is sent to either service.</p>
+    <p>Peak has none. There is no crash-reporting or product-analytics service in the app — no third party is told which screens you open, what you log, or that you opened the app at all.</p>
 
     <h2>What we don't do</h2>
     <p>We do not sell your data. We do not show third-party ads. We do not use your data for advertising or cross-app tracking, and none of the services above track you across other apps or websites. We do not share your data except with the service providers named above that make the app work.</p>
@@ -54,7 +57,7 @@
     <p>You can export all of your data as a JSON file at any time from Profile → Data &amp; privacy. You can permanently delete your account and all associated data from the same place; deletion is immediate and irreversible.</p>
 
     <h2>Health disclaimer</h2>
-    <p>Peak is a wellness and self-tracking tool, not a medical device or a substitute for professional care. Calorie targets, burn estimates, nutrition figures, and mind check-in suggestions are general wellness guidance, not diagnosis or treatment. Always consult a qualified professional before making significant changes to your diet, exercise, or health routine.</p>
+    <p>Peak is a wellness and self-tracking tool, not a medical device or a substitute for professional care. Calorie targets, burn estimates, nutrition figures, and Guidance suggestions are general wellness guidance, not diagnosis or treatment. Always consult a qualified professional before making significant changes to your diet, exercise, or health routine.</p>
 
     <h2>Contact</h2>
     <p>Questions about this policy or your data? Email <a href="mailto:jasonbgabler@gmail.com">jasonbgabler@gmail.com</a>.</p>
