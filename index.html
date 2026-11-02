@@ -2,44 +2,438 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PEAK — Legal &amp; Support</title>
-<style>
-  :root {
-    --bg: #F7F5FB; --surface: #FFFFFF; --ink: #231A38; --sub: #6E6486;
-    --accent: #7C3AED; --line: #E7E1F2;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 40px 36px; }
-  h1 { font-size: 28px; margin: 0 0 4px; }
-  p { margin: 0 0 12px; font-size: 15px; color: var(--sub); }
-  ul { padding-left: 0; list-style: none; margin: 24px 0 0; }
-  li { margin: 0 0 12px; }
-  a { color: var(--accent); font-size: 16px; font-weight: 600; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .brand { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
-  .brand .logo { font-weight: 800; font-size: 22px; letter-spacing: -0.5px; }
-  .brand .tag { color: var(--sub); font-size: 13px; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PEAK — Diet, fitness &amp; wellness in one app</title>
+<meta name="description" content="Log a meal in a sentence, a workout in a tap and how you feel in one touch. PEAK brings diet, fitness and wellness into one daily climb, and shows you the patterns behind it.">
+<link rel="canonical" href="https://usepeakapp.com/">
+<meta name="theme-color" content="#130E1F">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="fonts/montserrat-800ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-400Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PEAK">
+<meta property="og:url" content="https://usepeakapp.com/">
+<meta property="og:title" content="PEAK — Diet, fitness &amp; wellness in one app">
+<meta property="og:description" content="Log it in a sentence. PEAK turns your meals, movement and mood into one daily climb, and finds the patterns you'd never spot.">
+<meta property="og:image" content="https://usepeakapp.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PEAK","applicationCategory":"HealthApplication","operatingSystem":"iOS","url":"https://usepeakapp.com/","description":"A diet, fitness and wellness tracker. Describe a meal in plain words for USDA nutrition, log workouts, check in on how you feel, and see the patterns that connect them."}
+</script>
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <div class="card">
-    <div class="brand"><span class="logo">PEAK</span><span class="tag">Meals · Activity · Mood</span></div>
-    <h1>Legal &amp; Support</h1>
-    <p>PEAK is a personal wellness and self-tracking app for iPhone.</p>
-    <ul>
-      <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="./terms.html">Terms of Service</a></li>
-      <li><a href="./support.html">Support</a></li>
-    </ul>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Icons: lucide (ISC), the same set the app uses. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" x2="16" y1="12" y2="12"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19v3"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><rect x="9" y="2" width="6" height="13" rx="3"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="i-barcode" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M8 7v10"/><path d="M12 7v10"/><path d="M17 7v10"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol>
+    <symbol id="i-user-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 11 2 2 4-4"/><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 11v6"/><path d="M14 11v6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+
+    <!-- The mountain banner from the app's header (src/components/Ridge.tsx), Mix colours. -->
+    <linearGradient id="rBack" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#DCE8FB"/><stop offset="100%" stop-color="#A9C6F2"/></linearGradient>
+    <linearGradient id="rMid" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#E8808F"/><stop offset="100%" stop-color="#D6435A"/></linearGradient>
+    <linearGradient id="rFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8B4EF0"/><stop offset="100%" stop-color="#43176E"/></linearGradient>
+    <linearGradient id="rFade" x1="0" y1="0" x2="0" y2="1"><stop offset="40%" stop-color="#130E1F" stop-opacity="0"/><stop offset="100%" stop-color="#130E1F" stop-opacity="1"/></linearGradient>
+    <symbol id="ridge" viewBox="0 0 375 56" preserveAspectRatio="none">
+      <path d="M0,56 V28 L16,24 L30,19 L46,26 L64,15 L82,23 L100,12 L120,20 L142,10 L162,18 L184,13 L206,21 L228,11 L250,19 L272,15 L294,22 L314,14 L334,20 L354,17 L375,23 V56 Z" fill="url(#rBack)" opacity=".9"/>
+      <path d="M0,56 V37 L20,30 L36,24 L54,33 L74,20 L94,30 L116,16 L138,27 L162,14 L184,25 L208,17 L230,28 L254,15 L276,26 L298,20 L318,29 L340,21 L360,27 L375,32 V56 Z" fill="url(#rMid)" opacity=".97"/>
+      <path d="M0,53 V42 L18,33 L30,23 L44,35 L62,19 L80,31 L100,15 L122,29 L146,12 L168,27 L192,17 L212,30 L236,14 L258,28 L280,20 L300,31 L320,22 L340,29 L360,24 L375,33 V53 Z" fill="#43176E" opacity=".22"/>
+      <path d="M0,56 V45 L18,36 L30,26 L44,38 L62,22 L80,34 L100,18 L122,32 L146,15 L168,30 L192,20 L212,33 L236,17 L258,31 L280,23 L300,34 L320,25 L340,32 L360,27 L375,36 V56 Z" fill="url(#rFront)"/>
+      <path d="M70,32 L90,26 M108,29 L128,24 M180,26 L200,22 M250,28 L268,23" stroke="rgba(0,0,0,0.12)" stroke-width=".8" fill="none"/>
+      <rect x="0" y="0" width="375" height="56" fill="url(#rFade)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="PEAK home">
+      <img src="assets/icon-192.png" alt="" width="32" height="32">
+      <span class="wordmark">PEΛK</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#how">How it works</a>
+      <a class="link" href="#features">Features</a>
+      <a class="link" href="#privacy">Privacy</a>
+      <a class="link" href="#faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
+    </nav>
   </div>
-</div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="pillar-line">
+        <span style="color:var(--diet)"><i style="background:var(--diet)"></i>Diet</span>
+        <span style="color:var(--fitness)"><i style="background:var(--fitness)"></i>Fitness</span>
+        <span style="color:var(--wellness)"><i style="background:var(--wellness)"></i>Wellness</span>
+      </div>
+      <h1>Find your <span class="lam">peak.</span></h1>
+      <p class="lede">What you eat, how you move and how you feel shape each other. PEAK puts all three into one daily climb. Log anything in a sentence, and see the patterns that actually move you.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
+        <a class="btn btn-ghost" href="#how">See how it works</a>
+      </div>
+      <p class="cta-note"><span>For iPhone</span><span class="dot"></span><span>Coming soon to the App Store</span><span class="dot"></span><span>Free during early access</span></p>
+    </div>
+
+    <!-- Home, drawn from the app: header banner, the Λ, the day's bar, your coach. -->
+    <div class="reveal" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="status"><span>9:41</span><span>●●● ▮</span></div>
+          <div class="app-head">
+            <span class="wordmark">PEΛK</span>
+            <svg viewBox="0 0 375 56" preserveAspectRatio="none"><use href="#ridge"/></svg>
+          </div>
+          <div class="app-body">
+            <div class="app-title">Today's climb</div>
+            <svg class="glyph lam-anim" viewBox="232 262 560 500">
+              <defs>
+                <clipPath id="hL"><rect x="0" y="0" width="512" height="1024"/></clipPath>
+                <clipPath id="hR"><rect x="512" y="0" width="512" height="1024"/></clipPath>
+                <clipPath id="hG"><polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737"/></clipPath>
+              </defs>
+              <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="none" stroke="#9B6DF5" stroke-width="34" stroke-linejoin="round"/>
+              <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="#DCE8FB"/>
+              <g clip-path="url(#hG)">
+                <g clip-path="url(#hL)"><rect class="leg-fill" style="--p:.62" x="240" y="289" width="560" height="448" fill="#7FA8EA"/></g>
+                <g clip-path="url(#hR)"><rect class="leg-fill" style="--p:.48" x="240" y="289" width="560" height="448" fill="#E8808F"/></g>
+              </g>
+            </svg>
+            <div class="bar">
+              <div><b style="color:var(--diet)">62%</b><small>INTAKE</small></div>
+              <div><b style="color:var(--fitness)">48%</b><small>BURN</small></div>
+              <div><b style="color:var(--wellness)">Ascent</b><small>CHECK-IN</small></div>
+            </div>
+            <div class="mini-card">
+              <div class="h"><span>Your personal coach</span><span class="dots"><i style="background:var(--diet)"></i><i style="background:var(--fitness)"></i><i style="background:var(--wellness)"></i></span></div>
+              <div class="chips"><span style="color:var(--diet)">Diet</span><span style="color:var(--fitness)">Fitness</span><span style="color:var(--wellness)">Wellness</span></div>
+              <div class="inputbox"><span>Ask or log anything</span><svg><use href="#i-mic"/></svg></div>
+            </div>
+            <div class="mini-card">
+              <div class="h"><span>Quick log</span></div>
+              <div class="qlog">
+                <div style="color:var(--diet)"><svg><use href="#i-utensils"/></svg><small>+ Log</small></div>
+                <div style="color:var(--fitness)"><svg><use href="#i-zap"/></svg><small>+ Log</small></div>
+                <div style="color:var(--wellness)"><svg><use href="#i-activity"/></svg><small>+ Log</small></div>
+              </div>
+              <div class="nextline"><span>Next</span> Upper body strength · 5:30 PM</div>
+            </div>
+          </div>
+          <div class="tabbar">
+            <div class="on"><svg><use href="#i-mountain"/></svg>Home</div>
+            <div><svg><use href="#i-utensils"/></svg>Diet</div>
+            <div><svg><use href="#i-zap"/></svg>Fitness</div>
+            <div><svg><use href="#i-activity"/></svg>Wellness</div>
+            <div><svg><use href="#i-link"/></svg>Connect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="ridge" viewBox="0 0 375 56" preserveAspectRatio="none" aria-hidden="true"><use href="#ridge"/></svg>
+</section>
+
+<!-- HOW: logging -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Log it the way you'd say it</p>
+      <h2>No database to dig through.</h2>
+      <p class="lede" style="margin-top:16px">Type it, say it, snap it or scan it. PEAK identifies each food, estimates the portion, and pulls the nutrition from the USDA FoodData Central database.</p>
+    </div>
+    <div class="ways reveal">
+      <div class="way"><svg><use href="#i-pencil"/></svg><h3>Type it</h3><p>"Grilled chicken, half a plate of rice and broccoli."</p></div>
+      <div class="way"><svg><use href="#i-mic"/></svg><h3>Say it</h3><p>Talk the way you would to a friend. The mic listens until you're done.</p></div>
+      <div class="way"><svg><use href="#i-camera"/></svg><h3>Snap it</h3><p>Photograph the plate, or the label on the package.</p></div>
+      <div class="way"><svg><use href="#i-barcode"/></svg><h3>Scan it</h3><p>Barcodes match the label's own figures, store brands included.</p></div>
+    </div>
+    <div class="quote-line reveal">
+      <span class="typed">ran 3 miles in 30 min</span>
+      <span class="result">Logged as <b>Run · 30 min · 3.0 mi</b>, with the burn worked out from your weight and real pace.</span>
+    </div>
+  </div>
+</section>
+
+<!-- THE Λ -->
+<section class="section" style="padding-top:24px">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">One shape, your whole day</p>
+      <h2>The Λ fills as your day comes together.</h2>
+      <p class="lede" style="margin-top:16px">Every morning starts with an empty peak. Eat toward your target and the left side climbs. Move and the right side climbs. Check in on how you feel and it lights up.</p>
+      <ul class="points">
+        <li><svg><use href="#i-check"/></svg><span><b>Diet</b> — calories against today's target, or the deficit you're running right now.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Fitness</b> — calories burned or steps toward your goal, with Apple Health.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Wellness</b> — one touch on a five-point climb, from Down to Peak.</span></li>
+      </ul>
+    </div>
+    <div class="glyph-panel reveal" aria-hidden="true">
+      <svg class="big lam-anim" viewBox="232 262 560 500">
+        <defs>
+          <clipPath id="bL"><rect x="0" y="0" width="512" height="1024"/></clipPath>
+          <clipPath id="bR"><rect x="512" y="0" width="512" height="1024"/></clipPath>
+          <clipPath id="bG"><polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737"/></clipPath>
+        </defs>
+        <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="none" stroke="#9B6DF5" stroke-width="30" stroke-linejoin="round"/>
+        <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="#DCE8FB"/>
+        <g clip-path="url(#bG)">
+          <g clip-path="url(#bL)"><rect class="leg-fill" style="--p:.8" x="240" y="289" width="560" height="448" fill="#7FA8EA"/></g>
+          <g clip-path="url(#bR)"><rect class="leg-fill" style="--p:.65" x="240" y="289" width="560" height="448" fill="#E8808F"/></g>
+        </g>
+      </svg>
+      <div class="legend">
+        <div><i style="background:#7FA8EA"></i>Left side · Diet<span>what you've eaten</span></div>
+        <div><i style="background:#E8808F"></i>Right side · Fitness<span>what you've burned</span></div>
+        <div><i style="background:#9B6DF5"></i>Outline · Wellness<span>today's check-in</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Three tabs, one app</p>
+      <h2>Diet, fitness and wellness, finally talking to each other.</h2>
+    </div>
+    <div class="pillars">
+      <article class="pillar diet reveal">
+        <div class="icon"><svg><use href="#i-utensils"/></svg></div>
+        <p class="tag">Diet</p>
+        <h3>Know what's on your plate.</h3>
+        <p>Real nutrition from the words you'd use anyway.</p>
+        <ul>
+          <li>Calories, protein, carbs, fat and eight vitamins and minerals per meal</li>
+          <li>Every meal shows where it lands: how much of today is left</li>
+          <li>A pantry of the foods you keep, saved recipes, and a shopping list</li>
+          <li>Meal plans built for your target, or imported from a plan you already follow</li>
+        </ul>
+      </article>
+      <article class="pillar fitness reveal">
+        <div class="icon"><svg><use href="#i-zap"/></svg></div>
+        <p class="tag">Fitness</p>
+        <h3>Every kind of movement counts.</h3>
+        <p>From a walk with the dog to a heavy lift day.</p>
+        <ul>
+          <li>Workouts and steps from Apple Health, synced in on their own</li>
+          <li>Burn worked out from your weight, height and real pace</li>
+          <li>Bodyweight circuits, GPS routes for walks, runs, hikes and rides, and interval timers</li>
+          <li>A daily lap that fills toward your burn or step goal</li>
+        </ul>
+      </article>
+      <article class="pillar wellness reveal">
+        <div class="icon"><svg><use href="#i-activity"/></svg></div>
+        <p class="tag">Wellness</p>
+        <h3>How you feel is data too.</h3>
+        <p>The part most trackers leave out.</p>
+        <ul>
+          <li>A one-touch check-in on a mountain sunrise that rises with your mood</li>
+          <li>One line of gratitude a day, typed or spoken</li>
+          <li>Guided breathing, short meditations and wind-down practices</li>
+          <li>A daily note of guidance written from your own week</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COACH -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <p class="eyebrow">Your personal coach</p>
+      <h2>One coach for your whole day.</h2>
+      <p class="lede" style="margin-top:16px">Part trainer, part nutritionist, part wellness coach. Ask a question or just tell it what you did: it reads your day and your goals, answers from whichever angle the question needs, and logs what you mention.</p>
+      <ul class="points">
+        <li><svg><use href="#i-check"/></svg><span><b>Logs as you talk.</b> "Had oatmeal and coffee" becomes a breakfast entry, with Undo.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Answers with your numbers.</b> What's left today, what your week looks like.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Remembers what matters.</b> Tell it you're vegetarian once.</span></li>
+      </ul>
+    </div>
+    <div class="chat reveal" aria-label="An example conversation with the PEAK coach">
+      <div class="top"><b>Your personal coach</b><span class="dots"><i style="background:var(--diet)"></i><i style="background:var(--fitness)"></i><i style="background:var(--wellness)"></i></span></div>
+      <div class="bubble me">Had oatmeal with berries and a black coffee</div>
+      <div class="bubble coach"><span class="logged"><svg><use href="#i-check"/></svg>Logged breakfast</span><div class="sub">Oatmeal, berries, black coffee · 310 cal</div></div>
+      <div class="bubble me">What should I eat after my run tonight?</div>
+      <div class="bubble coach"><span class="lens" style="color:var(--diet)">As your nutritionist</span>Something with protein and carbs within an hour or two. Greek yogurt with fruit, or eggs on toast, both fit what's left of today.</div>
+      <div class="inputbox"><span>Ask or log anything</span><svg><use href="#i-mic"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- PATTERNS -->
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Patterns, not just totals</p>
+      <h2>It finds what you'd never spot.</h2>
+      <p class="lede" style="margin-top:16px">PEAK compares your own days against each other — mood against movement, sleep, steps and when you eat — and says what it finds in a sentence. Then you can test it.</p>
+      <ul class="points">
+        <li><svg><use href="#i-sparkles"/></svg><span><b>Patterns</b> in plain words, drawn only from your logs.</span></li>
+        <li><svg><use href="#i-repeat"/></svg><span><b>Two-week experiments</b> that score whether a change actually helped, and say so when it didn't.</span></li>
+        <li><svg><use href="#i-book"/></svg><span><b>Cited habits</b> from a library where every card names its source.</span></li>
+      </ul>
+    </div>
+    <div class="pattern reveal">
+      <div class="label"><span>Patterns</span><em>Example</em></div>
+      <p class="sentence">On days you move, your check-in averages <mark>0.5 higher</mark> (out of 5).</p>
+      <div class="bars" aria-hidden="true">
+        <span style="height:46%"></span><span class="hi" style="height:74%"></span><span style="height:52%"></span><span class="hi" style="height:82%"></span><span class="hi" style="height:70%"></span><span style="height:40%"></span><span class="hi" style="height:88%"></span>
+      </div>
+      <div class="bars-legend"><span><i style="background:var(--accent)"></i>Days you moved</span><span><i style="background:var(--line)"></i>Rest days</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="section">
+  <div class="wrap split flip">
+    <div class="reveal">
+      <p class="eyebrow">Plan once, follow all week</p>
+      <h2>Plan your week. Let it log itself.</h2>
+      <p class="lede" style="margin-top:16px">Let PEAK build a week of meals and workouts around your targets, import a plan you already follow, or plan it yourself. When a planned meal or session's time passes, it's logged for you.</p>
+      <ul class="points">
+        <li><svg><use href="#i-check"/></svg><span><b>Skipped it? Changed it?</b> One tap fixes the day.</span></li>
+        <li><svg><use href="#i-calendar"/></svg><span><b>On your calendar.</b> Planned meals and workouts sync to the calendar on your phone.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Up next.</b> What's planned for today waits right where you log.</span></li>
+      </ul>
+    </div>
+    <div class="plan reveal" aria-label="An example day from a weekly plan">
+      <div class="head"><b>Today</b><span>2 of 4 done</span></div>
+      <div class="row"><div class="ic" style="background:rgba(169,198,242,.14);color:var(--diet)"><svg><use href="#i-utensils"/></svg></div><div class="t"><b>Greek yogurt parfait</b><small>8:00 AM · 380 cal · Logged for you</small></div><span class="pill done">✓ Ate this</span></div>
+      <div class="row"><div class="ic" style="background:rgba(169,198,242,.14);color:var(--diet)"><svg><use href="#i-utensils"/></svg></div><div class="t"><b>Chicken grain bowl</b><small>12:30 PM · 540 cal</small></div><span class="pill done">✓ Ate this</span></div>
+      <div class="row"><div class="ic" style="background:rgba(232,128,143,.14);color:var(--fitness)"><svg><use href="#i-zap"/></svg></div><div class="t"><b>Upper body strength</b><small>5:30 PM · 45 min</small></div><span class="pill next">Done</span></div>
+      <div class="row"><div class="ic" style="background:rgba(169,198,242,.14);color:var(--diet)"><svg><use href="#i-utensils"/></svg></div><div class="t"><b>Salmon, rice and greens</b><small>6:30 PM · 610 cal</small></div><span class="pill done" style="opacity:.55">Ate this</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Connect</p>
+      <h2>Climbing is easier together.</h2>
+      <p class="lede" style="margin-top:16px">Share only the summaries you choose. Pause any time. Ending a connection stops sharing at once.</p>
+    </div>
+    <div class="connect-grid">
+      <div class="connect-card reveal"><svg><use href="#i-heart"/></svg><h3>Accountability partners</h3><p>Keep each other honest with streaks, weekly challenges and a quick cheer.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-users"/></svg><h3>Communities</h3><p>A group of up to 50 with a weekly leaderboard. Active days and minutes only, never calories or weight.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-user-check"/></svg><h3>Coaches</h3><p>Let a trainer or nutritionist follow along and suggest a goal you can accept or decline.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="section" id="privacy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Your data, yours</p>
+      <h2>Private by default.</h2>
+    </div>
+    <div class="trust reveal">
+      <div><svg><use href="#i-shield"/></svg><h3>No ads, no data selling</h3><p>Your logs are private to your account and never sold.</p></div>
+      <div><svg><use href="#i-download"/></svg><h3>Export any time</h3><p>Everything PEAK stores about you, as one file, from Profile.</p></div>
+      <div><svg><use href="#i-trash"/></svg><h3>Delete in one step</h3><p>Remove your account and all of its data permanently, whenever you want.</p></div>
+      <div><svg><use href="#i-book"/></svg><h3>Sources you can check</h3><p>Nutrition comes from USDA data, and every library card names where it came from.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Good to know</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is PEAK free?</summary><p>Yes, PEAK is free during early access. If paid features arrive later, we'll say what's included before anything changes.</p></details>
+      <details><summary>When can I get it?</summary><p>PEAK is in early access on iPhone now and coming soon to the App Store. Email us for an invite and we'll send one.</p></details>
+      <details><summary>Is there an Android version?</summary><p>PEAK is iPhone-first. Android is on the roadmap.</p></details>
+      <details><summary>Does it work with Apple Health?</summary><p>Yes. Connect Apple Health and PEAK reads your workouts, steps, sleep and resting heart rate, so you don't have to log them twice. It's optional, and you can disconnect any time.</p></details>
+      <details><summary>How accurate is the nutrition?</summary><p>PEAK identifies the foods you describe and takes their nutrition from USDA FoodData Central, including manufacturer label data for packaged and store-brand foods. You can adjust any portion before you log it.</p></details>
+      <details><summary>Is this medical advice?</summary><p>No. PEAK is a wellness tool for self-tracking and general guidance. It isn't a medical device and doesn't diagnose or treat anything. Talk with a qualified professional about medical questions.</p></details>
+      <details><summary>Can I take my data with me, or delete it?</summary><p>Yes. Export everything from Profile → Data &amp; privacy, or delete your account and all of its data from the same place. <a href="delete-account.html" style="color:var(--accent)">More on deleting your account</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap reveal">
+    <img class="app-icon" src="assets/icon-192.png" alt="" width="88" height="88">
+    <h2>Start your climb.</h2>
+    <p class="lede center">Early access is open on iPhone.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
+    </div>
+  </div>
+  <svg class="ridge" viewBox="0 0 375 56" preserveAspectRatio="none" aria-hidden="true"><use href="#ridge"/></svg>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./" aria-label="PEAK home"><img src="assets/icon-192.png" alt="" width="28" height="28"><span class="wordmark" style="font-size:19px">PEΛK</span></a>
+      <p class="disclaimer" style="margin-top:14px">PEAK provides general wellness information for self-tracking. It is not a medical device and does not provide medical advice, diagnosis or treatment.</p>
+      <p style="margin-top:10px">© 2026 PEAK</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+      <a href="delete-account.html">Delete account</a>
+      <a href="mailto:jasonbgabler@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Reveal sections and fill the Λ as they scroll into view. Without JS, or with
+  // reduced motion, everything is simply shown.
+  (function () {
+    var els = document.querySelectorAll(".reveal, .lam-anim");
+    if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { threshold: 0.18 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+</script>
 </body>
 </html>
