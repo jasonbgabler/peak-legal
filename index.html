@@ -105,59 +105,10 @@
       <p class="cta-note"><span>For iPhone</span><span class="dot"></span><span>Coming soon to the App Store</span><span class="dot"></span><span>Free during early access</span></p>
     </div>
 
-    <!-- Home, drawn from the app: header banner, the Λ, the day's bar, your coach. -->
-    <div class="reveal" aria-hidden="true">
+    <!-- Real screenshot of Home (demo account, current build). -->
+    <div class="reveal">
       <div class="phone">
-        <div class="screen">
-          <div class="island"></div>
-          <div class="status"><span>9:41</span><span>●●● ▮</span></div>
-          <div class="app-head">
-            <span class="wordmark">PEΛK</span>
-            <svg viewBox="0 0 375 56" preserveAspectRatio="none"><use href="#ridge"/></svg>
-          </div>
-          <div class="app-body">
-            <div class="app-title">Today's climb</div>
-            <svg class="glyph lam-anim" viewBox="232 262 560 500">
-              <defs>
-                <clipPath id="hL"><rect x="0" y="0" width="512" height="1024"/></clipPath>
-                <clipPath id="hR"><rect x="512" y="0" width="512" height="1024"/></clipPath>
-                <clipPath id="hG"><polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737"/></clipPath>
-              </defs>
-              <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="none" stroke="#9B6DF5" stroke-width="34" stroke-linejoin="round"/>
-              <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="#DCE8FB"/>
-              <g clip-path="url(#hG)">
-                <g clip-path="url(#hL)"><rect class="leg-fill" style="--p:.62" x="240" y="289" width="560" height="448" fill="#7FA8EA"/></g>
-                <g clip-path="url(#hR)"><rect class="leg-fill" style="--p:.48" x="240" y="289" width="560" height="448" fill="#E8808F"/></g>
-              </g>
-            </svg>
-            <div class="bar">
-              <div><b style="color:var(--diet)">62%</b><small>INTAKE</small></div>
-              <div><b style="color:var(--fitness)">48%</b><small>BURN</small></div>
-              <div><b style="color:var(--wellness)">Ascent</b><small>CHECK-IN</small></div>
-            </div>
-            <div class="mini-card">
-              <div class="h"><span>Your personal coach</span><span class="dots"><i style="background:var(--diet)"></i><i style="background:var(--fitness)"></i><i style="background:var(--wellness)"></i></span></div>
-              <div class="chips"><span style="color:var(--diet)">Diet</span><span style="color:var(--fitness)">Fitness</span><span style="color:var(--wellness)">Wellness</span></div>
-              <div class="inputbox"><span>Ask or log anything</span><svg><use href="#i-mic"/></svg></div>
-            </div>
-            <div class="mini-card">
-              <div class="h"><span>Quick log</span></div>
-              <div class="qlog">
-                <div style="color:var(--diet)"><svg><use href="#i-utensils"/></svg><small>+ Log</small></div>
-                <div style="color:var(--fitness)"><svg><use href="#i-zap"/></svg><small>+ Log</small></div>
-                <div style="color:var(--wellness)"><svg><use href="#i-activity"/></svg><small>+ Log</small></div>
-              </div>
-              <div class="nextline"><span>Next</span> Upper body strength · 5:30 PM</div>
-            </div>
-          </div>
-          <div class="tabbar">
-            <div class="on"><svg><use href="#i-mountain"/></svg>Home</div>
-            <div><svg><use href="#i-utensils"/></svg>Diet</div>
-            <div><svg><use href="#i-zap"/></svg>Fitness</div>
-            <div><svg><use href="#i-activity"/></svg>Wellness</div>
-            <div><svg><use href="#i-link"/></svg>Connect</div>
-          </div>
-        </div>
+        <img class="screen-img" src="assets/shots/home.jpg" width="660" height="1435" alt="PEAK's Home screen: today's climb as a Λ filling with diet and fitness, a check-in of Ascent, and your personal coach.">
       </div>
     </div>
   </div>
@@ -166,21 +117,26 @@
 
 <!-- HOW: logging -->
 <section class="section" id="how">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Log it the way you'd say it</p>
-      <h2>No database to dig through.</h2>
-      <p class="lede" style="margin-top:16px">Type it, say it, snap it or scan it. PEAK identifies each food, estimates the portion, and pulls the nutrition from the USDA FoodData Central database.</p>
+  <div class="wrap split">
+    <div>
+      <div class="section-head reveal" style="margin-bottom:32px">
+        <p class="eyebrow">Log it the way you'd say it</p>
+        <h2>No database to dig through.</h2>
+        <p class="lede" style="margin-top:16px">Type it, say it, snap it or scan it. PEAK identifies each food, estimates the portion, and pulls the nutrition from the USDA FoodData Central database.</p>
+      </div>
+      <div class="ways two reveal">
+        <div class="way"><svg><use href="#i-pencil"/></svg><h3>Type it</h3><p>"Greek yogurt with blueberries and granola."</p></div>
+        <div class="way"><svg><use href="#i-mic"/></svg><h3>Say it</h3><p>The mic listens until you're done talking.</p></div>
+        <div class="way"><svg><use href="#i-camera"/></svg><h3>Snap it</h3><p>Photograph the plate, or the label.</p></div>
+        <div class="way"><svg><use href="#i-barcode"/></svg><h3>Scan it</h3><p>Barcodes match the label's own figures.</p></div>
+      </div>
+      <div class="quote-line reveal">
+        <span class="typed">brisk walk 2 miles in 35 min</span>
+        <span class="result">Logged as <b>Walk · 35 min · 2 mi · ~173 cal</b>, worked out from your weight and real pace.</span>
+      </div>
     </div>
-    <div class="ways reveal">
-      <div class="way"><svg><use href="#i-pencil"/></svg><h3>Type it</h3><p>"Grilled chicken, half a plate of rice and broccoli."</p></div>
-      <div class="way"><svg><use href="#i-mic"/></svg><h3>Say it</h3><p>Talk the way you would to a friend. The mic listens until you're done.</p></div>
-      <div class="way"><svg><use href="#i-camera"/></svg><h3>Snap it</h3><p>Photograph the plate, or the label on the package.</p></div>
-      <div class="way"><svg><use href="#i-barcode"/></svg><h3>Scan it</h3><p>Barcodes match the label's own figures, store brands included.</p></div>
-    </div>
-    <div class="quote-line reveal">
-      <span class="typed">ran 3 miles in 30 min</span>
-      <span class="result">Logged as <b>Run · 30 min · 3.0 mi</b>, with the burn worked out from your weight and real pace.</span>
+    <div class="reveal">
+      <div class="phone"><img class="screen-img" src="assets/shots/meal-review.jpg" width="660" height="1435" loading="lazy" alt="PEAK's meal review: Greek yogurt, blueberries and granola, each with a serving size from USDA data, adding up to 321 calories, with Breakfast and Log buttons."></div>
     </div>
   </div>
 </section>
@@ -230,6 +186,7 @@
     </div>
     <div class="pillars">
       <article class="pillar diet reveal">
+        <div class="pillar-shot"><img src="assets/shots/diet.jpg" width="700" height="749" loading="lazy" alt="PEAK's Diet tab: 321 of 2,237 calories eaten, with today's diet box, Pantry and Up next."></div>
         <div class="icon"><svg><use href="#i-utensils"/></svg></div>
         <p class="tag">Diet</p>
         <h3>Know what's on your plate.</h3>
@@ -242,6 +199,7 @@
         </ul>
       </article>
       <article class="pillar fitness reveal">
+        <div class="pillar-shot"><img src="assets/shots/fitness.jpg" width="700" height="749" loading="lazy" alt="PEAK's Fitness tab: 19% of today's burn on a lap, with today's fitness box."></div>
         <div class="icon"><svg><use href="#i-zap"/></svg></div>
         <p class="tag">Fitness</p>
         <h3>Every kind of movement counts.</h3>
@@ -254,6 +212,7 @@
         </ul>
       </article>
       <article class="pillar wellness reveal">
+        <div class="pillar-shot"><img src="assets/shots/wellness.jpg" width="700" height="749" loading="lazy" alt="PEAK's Wellness tab: a mountain sunrise check-in at Ascent and today's gratitude note."></div>
         <div class="icon"><svg><use href="#i-activity"/></svg></div>
         <p class="tag">Wellness</p>
         <h3>How you feel is data too.</h3>
@@ -282,13 +241,8 @@
         <li><svg><use href="#i-check"/></svg><span><b>Remembers what matters.</b> Tell it you're vegetarian once.</span></li>
       </ul>
     </div>
-    <div class="chat reveal" aria-label="An example conversation with the PEAK coach">
-      <div class="top"><b>Your personal coach</b><span class="dots"><i style="background:var(--diet)"></i><i style="background:var(--fitness)"></i><i style="background:var(--wellness)"></i></span></div>
-      <div class="bubble me">Had oatmeal with berries and a black coffee</div>
-      <div class="bubble coach"><span class="logged"><svg><use href="#i-check"/></svg>Logged breakfast</span><div class="sub">Oatmeal, berries, black coffee · 310 cal</div></div>
-      <div class="bubble me">What should I eat after my run tonight?</div>
-      <div class="bubble coach"><span class="lens" style="color:var(--diet)">As your nutritionist</span>Something with protein and carbs within an hour or two. Greek yogurt with fruit, or eggs on toast, both fit what's left of today.</div>
-      <div class="inputbox"><span>Ask or log anything</span><svg><use href="#i-mic"/></svg></div>
+    <div class="reveal">
+      <div class="phone"><img class="screen-img" src="assets/shots/coach.jpg" width="660" height="1435" loading="lazy" alt="Your personal coach answering a Diet question: protein is the gap today, 28 of 168 grams, with suggestions to close it."></div>
     </div>
   </div>
 </section>

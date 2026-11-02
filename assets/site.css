@@ -325,3 +325,8 @@ section { position: relative; }
 .qlog small { font-size: 9.5px; font-weight: 600; }
 .nextline { margin-top: 9px; font-size: 10.5px; color: var(--sub); }
 .nextline span { color: var(--ink); font-weight: 600; margin-right: 4px; }
+/* Real app screenshots (website/assets/shots, demo account) */
+.phone .screen-img { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 39px; background: var(--bg); }
+.ways.two { grid-template-columns: repeat(2, 1fr); }
+.pillar-shot { margin: -28px -24px 22px; aspect-ratio: 1206 / 860; overflow: hidden; border-bottom: 1px solid var(--line-soft); background: var(--bg); }
+.pillar-shot img { width: 100%; height: auto; display: block; }
