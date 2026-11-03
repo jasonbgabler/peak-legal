@@ -330,3 +330,5 @@ section { position: relative; }
 .ways.two { grid-template-columns: repeat(2, 1fr); }
 .pillar-shot { margin: -28px -24px 22px; aspect-ratio: 1206 / 860; overflow: hidden; border-bottom: 1px solid var(--line-soft); background: var(--bg); }
 .pillar-shot img { width: 100%; height: auto; display: block; }
+.phone picture { display: block; height: 100%; }
+.pillar-shot picture { display: block; }
