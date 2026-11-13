@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>/* A password-reset link from PEAK's email lands on the site's address (11/12): send it to the reset page with its one-time sign-in. */
+if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.replace("reset-password.html" + location.hash);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PEAK — A personal coach for diet, fitness &amp; wellness</title>
 <meta name="description" content="Tell your coach what you ate or how you moved and it's logged. Ask anything and get an answer from your own day. PEAK brings diet, fitness and wellness into one daily climb, and shows you the patterns behind it.">
