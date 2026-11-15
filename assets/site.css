@@ -328,7 +328,61 @@ section { position: relative; }
 /* Real app screenshots (website/assets/shots, demo account) */
 .phone .screen-img { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 39px; background: var(--bg); }
 .ways.two { grid-template-columns: repeat(2, 1fr); }
-.pillar-shot { margin: -28px -24px 22px; aspect-ratio: 1206 / 860; overflow: hidden; border-bottom: 1px solid var(--line-soft); background: var(--bg); }
+.pillar-shot { margin: -28px -24px 22px; aspect-ratio: 1206 / 1060; overflow: hidden; border-bottom: 1px solid var(--line-soft); background: var(--bg); }
 .pillar-shot img { width: 100%; height: auto; display: block; }
 .phone picture { display: block; height: 100%; }
 .pillar-shot picture { display: block; }
+
+/* Hero message box: the coach's own composer, cycling through things you can say (11/15) */
+.ask-box { display: flex; align-items: center; gap: 12px; margin-top: 26px; max-width: 30em; min-height: 56px; padding: 8px 16px 8px 10px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 0 34px -8px rgba(139, 92, 246, .55); }
+.ask-box .plus { flex: none; width: 36px; height: 36px; border-radius: 50%; background: rgba(183,156,248,.14); color: var(--accent); display: grid; place-items: center; }
+.ask-box .plus svg { width: 18px; height: 18px; }
+.ask-box .mic { flex: none; width: 20px; height: 20px; color: var(--sub); }
+.ask-text { flex: 1; min-width: 0; font-size: 16px; font-weight: 500; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: opacity .3s ease, transform .3s ease; }
+.ask-text.out { opacity: 0; transform: translateY(6px); }
+
+/* Coach: say this, get that */
+.asks { display: grid; gap: 14px; }
+@media (min-width: 680px) { .asks { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .asks { grid-template-columns: repeat(3, 1fr); } }
+.ask { --c: var(--accent); --cd: var(--fill); background: var(--surface-2); border: 1px solid var(--line-soft); border-radius: 22px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.ask.diet { --c: var(--diet); --cd: var(--diet-deep); }
+.ask.fitness { --c: var(--fitness); --cd: var(--fitness-deep); }
+.ask.wellness { --c: var(--wellness); --cd: var(--fill); }
+.ask-tag { display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--c); }
+.ask-tag svg { width: 16px; height: 16px; }
+.say { align-self: flex-end; max-width: 92%; background: var(--fill); color: #fff; padding: 10px 14px; border-radius: 18px 18px 6px 18px; font-size: 15px; line-height: 1.4; font-weight: 500; }
+.say-photo { display: inline-flex; align-items: center; gap: 8px; }
+.say-photo svg { width: 16px; height: 16px; }
+.got { margin-top: auto; background: var(--surface); border-radius: 6px 18px 18px 18px; padding: 14px; display: grid; gap: 4px; }
+.got b { font-size: 15px; font-weight: 600; }
+.got span { font-size: 14px; color: var(--sub); line-height: 1.45; }
+.acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.acts i { font-style: normal; font-size: 13px; font-weight: 600; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); color: var(--ink); }
+.acts i.fill { background: var(--cd); border-color: transparent; color: #fff; }
+.asks-note { text-align: center; color: var(--sub); font-size: 13px; margin-top: 18px; }
+.h3-lg { font-size: clamp(24px, 3.6vw, 32px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.band { background: linear-gradient(180deg, rgba(24,34,56,.55), rgba(24,34,56,0)); border-top: 1px solid var(--line-soft); }
+.hero-grid > * { min-width: 0; }
+
+/* Legal, support and invite pages share the site's shell (11/15) */
+.page p { margin: 0 0 12px; }
+.page .updated { color: var(--sub); font-size: 14px; margin-bottom: 20px; }
+.page.legal .card { max-width: 760px; }
+.page.legal p { font-size: 15.5px; line-height: 1.65; }
+.page .faq { max-width: none; margin: 8px 0 0; }
+.page .faq summary { font-size: 16px; padding: 16px 32px 16px 0; color: var(--ink); }
+.page .faq details p { padding-bottom: 16px; margin: 0; }
+.invite-code { font-family: var(--display); font-size: 32px; letter-spacing: 6px; font-weight: 800; color: var(--accent); margin: 12px 0 24px; }
+.small-note { font-size: 13px; margin-top: 20px; }
+
+/* "Also ask it to" strip under the coach cards */
+.also { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 22px; }
+.also span { font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink); background: var(--surface-2); }
+.also .also-label { border: 0; background: none; color: var(--sub); padding-left: 0; padding-right: 4px; }
+.plan .row.done { opacity: .78; }
+.plan .pill.hold { color: var(--ink); background: transparent; border: 1px solid var(--line); }
+.plan .pill.done { color: var(--diet); }
+@media (max-width: 900px) { .nav { gap: 20px; } }
+@media (max-width: 480px) { .also span { font-size: 13px; padding: 7px 12px; } .also .also-label { width: 100%; text-align: center; } }

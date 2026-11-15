@@ -2,49 +2,83 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PEAK — Support</title>
-<style>
-  :root {
-    --bg: #F7F5FB; --surface: #FFFFFF; --ink: #231A38; --sub: #6E6486;
-    --accent: #7C3AED; --line: #E7E1F2;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 40px 36px; }
-  h1 { font-size: 28px; margin: 0 0 4px; }
-  h2 { font-size: 17px; margin: 28px 0 8px; color: var(--accent); }
-  p { margin: 0 0 12px; font-size: 15px; }
-  a { color: var(--accent); }
-  .brand { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
-  .brand .logo { font-weight: 800; font-size: 22px; letter-spacing: -0.5px; }
-  .brand .tag { color: var(--sub); font-size: 13px; }
-</style>
+<meta name="description" content="Help with PEAK: logging, targets, Apple Health, sign-in, sharing, your data, and how to reach us.">
+<link rel="canonical" href="https://usepeakapp.com/support">
+<meta name="theme-color" content="#130E1F">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="fonts/montserrat-800ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-400Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<div class="wrap">
-  <div class="card">
-    <div class="brand"><span class="logo">PEAK</span><span class="tag">Meals · Activity · Mood</span></div>
-    <h1>Support</h1>
-
-    <h2>Get help</h2>
-    <p>Found a bug, have a question, or want to suggest a feature? Email <a href="mailto:jasonbgabler@gmail.com">jasonbgabler@gmail.com</a> and we'll get back to you.</p>
-
-    <h2>Your data</h2>
-    <p>Export everything PEAK stores about you on its servers as a JSON file from <strong>Profile → Data &amp; privacy → Export your data</strong>. Permanently delete your account and all data from <strong>Profile → Data &amp; privacy → Delete your account</strong>.</p>
-
-    <h2>Common questions</h2>
-    <p><strong>Why do calorie numbers look approximate?</strong> PEAK pairs Claude's food identification with USDA FoodData Central nutrition data — figures are good estimates for general guidance, not lab measurements.</p>
-    <p><strong>Is PEAK medical advice?</strong> No. PEAK is a wellness tracker. Always consult a qualified professional for medical or mental-health concerns.</p>
-
-    <h2>Privacy</h2>
-    <p>Read the full <a href="./privacy-policy.html">privacy policy</a>.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="PEAK home">
+      <img src="assets/icon-192.png" alt="" width="32" height="32">
+      <span class="wordmark">PEΛK</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="./#coach">Coach</a>
+      <a class="link" href="./#how">Logging</a>
+      <a class="link" href="./#features">Features</a>
+      <a class="link" href="./#plans">Plans</a>
+      <a class="link" href="./#privacy">Privacy</a>
+      <a class="link" href="./#faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
+    </nav>
   </div>
+</header>
+<main id="main" class="page"><div class="wrap"><div class="card">
+<p class="eyebrow">Support</p>
+<h1>How can we help?</h1>
+<p>Found a bug, have a question, or want to suggest a feature? Email <a href="mailto:jasonbgabler@gmail.com?subject=PEAK%20support">jasonbgabler@gmail.com</a> and we'll get back to you.</p>
+<p>Inside the app, the menu › your name › <strong>Help</strong> has a short walkthrough of every tab, and you can ask your coach how to do anything in PEAK.</p>
+
+<h2>Common questions</h2>
+<div class="faq">
+  <details><summary>How do I log a meal or a workout?</summary><p>The fastest way is to tell your coach: on the <strong>Coach</strong> tab, type or say what you ate or how you moved ("had oatmeal and coffee", "ran 3 miles in 30 minutes") and it's logged, with Undo and Change under it. Or use the box at the top of the <strong>Diet</strong> or <strong>Fitness</strong> tab. On Diet you can also take a photo, scan a barcode or pick from your kitchen.</p></details>
+  <details><summary>How do I log something for an earlier day?</summary><p>Say the day to your coach ("I forgot to log a hike yesterday"), or include it in what you type in the Diet or Fitness box. The log screens also have <strong>Which day?</strong> (Today, Yesterday, Earlier). To browse a past day, open <strong>Log history</strong> on that tab and tap the calendar icon.</p></details>
+  <details><summary>How do I change or delete something I logged?</summary><p>Open <strong>Log history</strong> on the Diet, Fitness or Wellness tab, pick the day, and tap the entry to change it, its time or its day, or to delete it. Right after the coach logs something, Undo and Change sit under it.</p></details>
+  <details><summary>My plan logged a meal or workout I didn't do.</summary><p>Planned items log themselves half an hour after their time. Open Log history, find the item marked "From your plan" and tap <strong>Skipped it?</strong>, or tap the item to change what happened. To stop plans logging themselves, turn off <strong>Log my plan for me</strong> at the foot of Plan ahead (the Plan tile on Diet or Fitness).</p></details>
+  <details><summary>How do I change my calorie, macro, burn or step targets?</summary><p>Open the menu (three lines, top left), tap your name for Profile, then <strong>Daily targets</strong>. Your goal, goal weight and reach-by date are under <strong>Goal</strong>.</p></details>
+  <details><summary>How do I connect Apple Health or my calendar?</summary><p>Open the menu and tap <strong>Integrations</strong>. Apple Health brings in workouts, steps, sleep and resting heart rate. Calendar sync puts planned meals and workouts on your phone's calendar.</p></details>
+  <details><summary>I forgot my password.</summary><p>On the Log in screen tap <strong>Forgot password?</strong>. PEAK emails you a link that opens a page on usepeakapp.com where you choose a new one. Each link works once, for one hour.</p></details>
+  <details><summary>Sign in with Apple or Google opened a new, empty account.</summary><p>Log in with your email and password instead, then go to Profile › Username and sign-in › <strong>Sign-in methods</strong> and tap Connect beside Apple or Google. After that, either one opens your real account.</p></details>
+  <details><summary>How do I invite a partner, join a community or connect with a coach?</summary><p>Open the menu and tap <strong>Sharing</strong>. Share an invite link, or tap <strong>Have a code?</strong> to join with a code someone sent you. You choose what each connection sees, and you can pause or end sharing at any time.</p></details>
+  <details><summary>How do I tell the coach about allergies or foods I avoid?</summary><p>On the Coach tab tap <strong>Coach's memory</strong>, then About you. Food suggestions, menu picks and meal plans leave those foods out, and a scanned label flags them. PEAK never tells you a food is safe, so always check the package or ask the restaurant.</p></details>
+  <details><summary>How do I turn reminders on or off?</summary><p>Profile › <strong>Notifications</strong>. Each reminder has its own switch and time.</p></details>
+  <details><summary>What does PEAK use my location for?</summary><p>Recording a route you start, and, only when you ask your coach, today's weather or places nearby. Profile › <strong>Location</strong> shows what's allowed and has a switch for travel tips. PEAK's servers never store your location.</p></details>
+  <details><summary>Can I hide calorie numbers?</summary><p>Yes. Profile › Appearance › Calories on the main screens › <strong>Hide</strong>.</p></details>
+  <details><summary>Why do calorie numbers look approximate?</summary><p>PEAK uses AI to identify the foods you describe or photograph, then takes their nutrition from USDA FoodData Central and, for packaged foods, the product label. Portions are estimates you can adjust before or after logging. Treat the figures as good general guidance, not lab measurements.</p></details>
+  <details><summary>Is PEAK medical advice?</summary><p>No. PEAK is a wellness tool for self-tracking and general guidance. It isn't a medical device and doesn't diagnose or treat anything. Talk with a qualified professional about medical or mental-health concerns. If you are in crisis, contact your local emergency services (in the US, call or text 988).</p></details>
 </div>
+
+<h2>Your data</h2>
+<p>Export everything PEAK stores about you as one file from the menu › your name › <strong>Data &amp; privacy</strong> › Export your data. Delete your account and all of its data from the same place. <a href="delete-account.html">More on deleting your account</a>.</p>
+
+<h2>Privacy and terms</h2>
+<p>Read the <a href="privacy-policy.html">Privacy Policy</a> and the <a href="terms.html">Terms of Service</a>.</p>
+</div></div></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./" aria-label="PEAK home"><img src="assets/icon-192.png" alt="" width="28" height="28"><span class="wordmark" style="font-size:19px">PEΛK</span></a>
+      <div class="disclaimer" style="margin-top:14px">PEAK provides general wellness information for self-tracking. It is not a medical device and does not provide medical advice, diagnosis or treatment.</div>
+      <div style="margin-top:10px">© 2026 PEAK</div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+      <a href="delete-account.html">Delete account</a>
+      <a href="mailto:jasonbgabler@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

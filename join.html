@@ -1,38 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Join on PEAK</title>
-  <meta name="robots" content="noindex" />
-  <style>
-    :root { color-scheme: light dark; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #141021; color: #F4F1FA; }
-    main { max-width: 440px; margin: 0 auto; padding: 56px 24px; text-align: center; }
-    h1 { font-size: 26px; margin: 0 0 8px; }
-    p { color: #B8AFCF; line-height: 1.5; margin: 0 0 20px; }
-    .code { font-size: 30px; letter-spacing: 6px; font-weight: 800; color: #B79CF8; margin: 8px 0 24px; }
-    a.btn { display: inline-block; background: #4A7BDB; color: #fff; text-decoration: none; font-weight: 600; padding: 14px 28px; border-radius: 14px; }
-    small { display: block; margin-top: 28px; color: #8E85A8; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Join on PEAK</title>
+<meta name="description" content="An invitation to connect on PEAK.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#130E1F">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="fonts/montserrat-800ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-400Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>You're invited to PEAK</h1>
-    <p>Someone wants to connect with you in PEAK — as a partner, a coach or in a community.</p>
-    <div class="code" id="code"></div>
-    <a class="btn" id="open" href="#">Open in PEAK</a>
-    <p style="margin-top:24px">Don't have the app yet? Install PEAK, then go to <b>Connect › Share</b>, tap <b>Have a code?</b> and enter the code above.</p>
-    <small>Nothing is shared until you choose what to share in the app.</small>
-  </main>
-  <script>
-    (function () {
-      var code = (new URLSearchParams(location.search).get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 12);
-      document.getElementById("code").textContent = code || "—";
-      var url = "peak://join/" + encodeURIComponent(code);
-      document.getElementById("open").setAttribute("href", url);
-      if (code) setTimeout(function () { location.href = url; }, 300);
-    })();
-  </script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="PEAK home">
+      <img src="assets/icon-192.png" alt="" width="32" height="32">
+      <span class="wordmark">PEΛK</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="./#coach">Coach</a>
+      <a class="link" href="./#how">Logging</a>
+      <a class="link" href="./#features">Features</a>
+      <a class="link" href="./#plans">Plans</a>
+      <a class="link" href="./#privacy">Privacy</a>
+      <a class="link" href="./#faq">FAQ</a>
+      <a class="btn btn-primary btn-sm" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="page"><div class="wrap"><div class="card" style="text-align:center;max-width:480px">
+<p class="eyebrow">Sharing</p>
+<h1>You're invited to PEAK</h1>
+<p>Someone wants to connect with you in PEAK, as a partner, in a community or as a coach.</p>
+<div class="invite-code" id="code"></div>
+<a class="btn btn-primary" id="open" href="#">Open in PEAK</a>
+<p style="margin-top:24px">If the button doesn't open the app: in PEAK, open the menu (three lines, top left), tap <strong>Sharing</strong>, then <strong>Have a code?</strong> and enter the code above.</p>
+<p>Don't have PEAK yet? It's in early access on iPhone. <a href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Ask for an invite</a>.</p>
+<p class="small-note">Nothing is shared until you choose what to share in the app.</p>
+</div></div></main>
+<script>
+  (function () {
+    var code = (new URLSearchParams(location.search).get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 12);
+    document.getElementById("code").textContent = code || "—";
+    var url = "peak://join/" + encodeURIComponent(code);
+    document.getElementById("open").setAttribute("href", url);
+    if (code) setTimeout(function () { location.href = url; }, 300);
+  })();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="./" aria-label="PEAK home"><img src="assets/icon-192.png" alt="" width="28" height="28"><span class="wordmark" style="font-size:19px">PEΛK</span></a>
+      <div class="disclaimer" style="margin-top:14px">PEAK provides general wellness information for self-tracking. It is not a medical device and does not provide medical advice, diagnosis or treatment.</div>
+      <div style="margin-top:10px">© 2026 PEAK</div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+      <a href="delete-account.html">Delete account</a>
+      <a href="mailto:jasonbgabler@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
