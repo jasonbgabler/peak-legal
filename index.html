@@ -127,7 +127,7 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
         <span style="color:var(--wellness)"><i style="background:var(--wellness)"></i>Wellness</span>
       </div>
       <h1>Find your <span class="lam">peak.</span></h1>
-      <p class="lede">A personal coach for diet, fitness and wellness. Tell it what you did. Ask it what's next.</p>
+      <p class="lede">A personal coach for diet, fitness and wellness. Tell it what you ate or how you moved and it's logged. Ask it anything and the answer comes from your own day.</p>
       <div class="ask-box" aria-hidden="true">
         <span class="plus"><svg><use href="#i-plus"/></svg></span>
         <span class="ask-text" id="askText">Had oatmeal and coffee for breakfast</span>
@@ -137,7 +137,7 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
         <a class="btn btn-primary" href="mailto:jasonbgabler@gmail.com?subject=PEAK%20early%20access&amp;body=I'd%20like%20early%20access%20to%20PEAK%20on%20iPhone.">Get early access</a>
         <a class="btn btn-ghost" href="#coach">Meet your coach</a>
       </div>
-      <p class="cta-note"><span>iPhone</span><span class="dot"></span><span>Free during early access</span></p>
+      <p class="cta-note"><span>For iPhone</span><span class="dot"></span><span>Coming soon to the App Store</span><span class="dot"></span><span>Free during early access</span></p>
     </div>
     <div class="reveal">
       <div class="phone"><picture><source type="image/webp" srcset="assets/shots/coach-home-700.webp 700w, assets/shots/coach-home-1206.webp 1206w" sizes="(max-width: 420px) 80vw, 310px"><img class="screen-img" src="assets/shots/coach-home-700.jpg" srcset="assets/shots/coach-home-700.jpg 700w, assets/shots/coach-home-1206.jpg 1206w" sizes="(max-width: 420px) 80vw, 310px" width="1206" height="2622" fetchpriority="high" decoding="async" alt="PEAK's Coach tab: today's Λ, a greeting, the Message Coach box and quick guidance for Diet, Fitness and Wellness."></picture></div>
@@ -158,35 +158,50 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
       <article class="ask diet reveal">
         <p class="ask-tag"><svg><use href="#i-pencil"/></svg>Log by talking</p>
         <p class="say">Had oatmeal, then walked 2 miles</p>
-        <div class="got"><b>Logged · breakfast and a walk</b><div class="acts"><i>Undo</i><i>Change</i></div></div>
+        <div class="got"><b>Logged · breakfast and a walk</b><span>321 cal and 2 miles, priced from USDA data and your pace.</span><div class="acts"><i>Undo</i><i>Change</i></div></div>
       </article>
       <article class="ask fitness reveal">
         <p class="ask-tag"><svg><use href="#i-calendar"/></svg>Change your plan</p>
         <p class="say">Move Thursday's run to Saturday</p>
-        <div class="got"><b>Run moved to Saturday, 8:00 AM</b><div class="acts"><i class="fill">Update my plan</i></div></div>
+        <div class="got"><b>Run moved to Saturday, 8:00 AM</b><span>Any meal or workout in the next three weeks, with Undo.</span><div class="acts"><i class="fill">Update my plan</i></div></div>
       </article>
       <article class="ask fitness reveal">
         <p class="ask-tag"><svg><use href="#i-dumbbell"/></svg>Build a program</p>
         <p class="say">Build me a 4-week strength plan</p>
-        <div class="got"><b>4 weeks · 3 days a week</b><div class="acts"><i class="fill">Add to Fitness plan</i></div></div>
+        <div class="got"><b>4 weeks · 3 days a week</b><span>Sets, reps and rest, built around your equipment.</span><div class="acts"><i class="fill">Add to Fitness plan</i></div></div>
       </article>
       <article class="ask fitness reveal">
         <p class="ask-tag"><svg><use href="#i-cloud"/></svg>Plan around weather</p>
         <p class="say">A workout for today?</p>
-        <div class="got"><b>Rain at 3 PM, so a 30-minute indoor circuit</b><div class="acts"><i class="fill">Start</i></div></div>
+        <div class="got"><b>Rain at 3 PM, so a 30-minute indoor circuit</b><span>It checks today's forecast near you, only when you ask.</span><div class="acts"><i class="fill">Start</i></div></div>
       </article>
       <article class="ask diet reveal">
         <p class="ask-tag"><svg><use href="#i-menu"/></svg>Scan a menu</p>
         <p class="say say-photo"><svg><use href="#i-camera"/></svg>A photo of the menu</p>
-        <div class="got"><b>Cedar plank salmon · 560 cal · 45 g protein</b><div class="acts"><i class="fill">Log this</i></div></div>
+        <div class="got"><b>Cedar plank salmon · 560 cal · 45 g protein</b><span>Picked for today's calories, protein and your allergies.</span><div class="acts"><i class="fill">Log this</i></div></div>
       </article>
       <article class="ask wellness reveal">
         <p class="ask-tag"><svg><use href="#i-wind"/></svg>Reset</p>
         <p class="say">I'm stressed and can't switch off</p>
-        <div class="got"><b>Two minutes of guided 4-7-8 breathing</b><div class="acts"><i class="fill">Start</i></div></div>
+        <div class="got"><b>Two minutes of guided 4-7-8 breathing</b><span>With a voice guide if you want one.</span><div class="acts"><i class="fill">Start</i></div></div>
       </article>
     </div>
-    <p class="asks-note">Examples</p>
+    <p class="asks-note">Examples. Your coach answers from your own day, goals and plans.</p>
+
+    <div class="split flip" style="margin-top:72px">
+      <div class="reveal">
+        <h3 class="h3-lg">It knows your day, and it knows you.</h3>
+        <ul class="points">
+          <li><svg><use href="#i-check"/></svg><span><b>Answers from your numbers.</b> What you've eaten, moved, slept and planned, with the figures one tap away under Why.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>Remembers what matters.</b> Allergies, foods you avoid, your equipment or a sore knee. Tell it once.</span></li>
+          <li><svg><use href="#i-pin"/></svg><span><b>Helps wherever you are.</b> Places nearby, a day out planned around your goals, and hotel-room workouts when you travel.</span></li>
+          <li><svg><use href="#i-mic"/></svg><span><b>Talk instead of type.</b> The mic listens until you're done, and the coach can read its answers aloud.</span></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="phone"><picture><source type="image/webp" srcset="assets/shots/coach-700.webp 700w, assets/shots/coach-1206.webp 1206w" sizes="(max-width: 420px) 80vw, 310px"><img class="screen-img" src="assets/shots/coach-700.jpg" srcset="assets/shots/coach-700.jpg 700w, assets/shots/coach-1206.jpg 1206w" sizes="(max-width: 420px) 80vw, 310px" width="1206" height="2622" loading="lazy" decoding="async" alt="Your personal coach logging a breakfast and a two-mile walk from a sentence each, with Undo and Change under each entry."></picture></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -198,9 +213,9 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
       <h2>Grounded. Reviewed. Careful.</h2>
     </div>
     <div class="connect-grid">
-      <div class="connect-card reveal"><svg><use href="#i-book"/></svg><h3>Grounded</h3><p>Built on 30 named sources, from national guidelines to peer-reviewed research.</p></div>
-      <div class="connect-card reveal"><svg><use href="#i-badge"/></svg><h3>Reviewed</h3><p>Checked by a registered dietitian, a strength coach and a licensed mental-health professional.</p></div>
-      <div class="connect-card reveal"><svg><use href="#i-shield"/></svg><h3>Careful</h3><p>Respects your allergies and limits, and knows when to point you to a professional.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-book"/></svg><h3>Grounded</h3><p>Its nutrition, fitness and wellness standards rest on 30 named sources, from national guidelines to peer-reviewed research. An answer can show its source.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-badge"/></svg><h3>Reviewed</h3><p>Those standards and its safety replies were reviewed by a registered dietitian, a certified strength and conditioning coach and a licensed mental-health professional.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-shield"/></svg><h3>Careful</h3><p>Allergies are hard limits. It won't suggest supplement doses, train through pain or go under a safe calorie floor, and it points you to a professional when needed.</p></div>
     </div>
   </div>
 </section>
@@ -211,11 +226,11 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="reveal">
       <p class="eyebrow">Logging</p>
       <h2>No database to dig through.</h2>
-      <p class="lede" style="margin-top:16px">Type it, say it, snap it or scan it. PEAK finds the nutrition, from USDA data and the label itself.</p>
+      <p class="lede" style="margin-top:16px">Type it, say it, snap it or scan it, on the Diet tab or straight to your coach. PEAK identifies each food, estimates the portion and pulls the nutrition from USDA data.</p>
       <ul class="points">
-        <li><svg><use href="#i-pencil"/></svg><span><b>Type or say it.</b> "Chicken burrito bowl with rice and beans."</span></li>
-        <li><svg><use href="#i-camera"/></svg><span><b>Snap or scan it.</b> A plate, a label or a barcode.</span></li>
-        <li><svg><use href="#i-check"/></svg><span><b>Fix it anytime.</b> Every entry has Undo and Change.</span></li>
+        <li><svg><use href="#i-pencil"/></svg><span><b>Type or say it.</b> "Chicken burrito bowl with rice and beans." The mic listens until you're done.</span></li>
+        <li><svg><use href="#i-camera"/></svg><span><b>Snap or scan it.</b> A plate, a label or a barcode. Packaged foods come from the label, with allergens and additives flagged.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Fix it anytime.</b> Adjust a serving before you log, or change it later. Earlier days count too.</span></li>
       </ul>
     </div>
     <div class="reveal">
@@ -230,26 +245,33 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="reveal">
       <p class="eyebrow">One shape, your whole day</p>
       <h2>Fill your peak.</h2>
-      <p class="lede" style="margin-top:16px">Eat toward your target and the left side fills. Move and the right side fills. Check in and the outline lights. Do all three and the peak glows.</p>
+      <p class="lede" style="margin-top:16px">Every morning starts with an empty peak. Eat toward your target and the left side fills. Move and the right side fills. Check in and the outline lights.</p>
+      <ul class="points">
+        <li><svg><use href="#i-check"/></svg><span><b>Diet</b> — calories against today's target, or the deficit you're running right now.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Fitness</b> — calories burned or steps toward your goal.</span></li>
+        <li><svg><use href="#i-check"/></svg><span><b>Wellness</b> — a one-tap check-in, or a finished breathing, meditation or wind-down practice.</span></li>
+        <li><svg><use href="#i-sparkles"/></svg><span><b>The summit</b> — fill all three and the whole peak glows, on the Coach tab too.</span></li>
+      </ul>
     </div>
     <div class="glyph-panel reveal" aria-hidden="true">
+      <!-- The Λ is drawn symmetric about x=512 (where the halves split), like the app since 11/12: the font's own Λ has its inner notch 5 units left of center, which put the split off the notch. -->
       <svg class="big lam-anim" viewBox="232 262 560 500">
         <defs>
           <clipPath id="bL"><rect x="0" y="0" width="512" height="1024"/></clipPath>
           <clipPath id="bR"><rect x="512" y="0" width="512" height="1024"/></clipPath>
-          <clipPath id="bG"><polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737"/></clipPath>
+          <clipPath id="bG"><polygon points="258,737 449,289 575,289 766,737 641,737 512,446 383,737"/></clipPath>
         </defs>
-        <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="none" stroke="#9B6DF5" stroke-width="30" stroke-linejoin="round"/>
-        <polygon points="258,737 449,289 575,289 766,737 628,737 507,446 383,737" fill="#DCE8FB"/>
+        <polygon points="258,737 449,289 575,289 766,737 641,737 512,446 383,737" fill="none" stroke="#9B6DF5" stroke-width="30" stroke-linejoin="round"/>
+        <polygon points="258,737 449,289 575,289 766,737 641,737 512,446 383,737" fill="#DCE8FB"/>
         <g clip-path="url(#bG)">
           <g clip-path="url(#bL)"><rect class="leg-fill" style="--p:.8" x="240" y="289" width="560" height="448" fill="#7FA8EA"/></g>
           <g clip-path="url(#bR)"><rect class="leg-fill" style="--p:.65" x="240" y="289" width="560" height="448" fill="#E8808F"/></g>
         </g>
       </svg>
       <div class="legend">
-        <div><i style="background:#7FA8EA"></i>Diet<span>left side</span></div>
-        <div><i style="background:#E8808F"></i>Fitness<span>right side</span></div>
-        <div><i style="background:#9B6DF5"></i>Wellness<span>outline</span></div>
+        <div><i style="background:#7FA8EA"></i>Left side · Diet<span>intake or deficit</span></div>
+        <div><i style="background:#E8808F"></i>Right side · Fitness<span>burn or steps</span></div>
+        <div><i style="background:#9B6DF5"></i>Outline · Wellness<span>check-in</span></div>
       </div>
     </div>
   </div>
@@ -261,6 +283,7 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="section-head center reveal">
       <p class="eyebrow">Diet · Fitness · Wellness</p>
       <h2>Three areas. One climb.</h2>
+      <p class="lede" style="margin-top:16px">Five tabs: the coach up front, one for each area, and Progress for where you stand.</p>
     </div>
     <div class="pillars">
       <article class="pillar diet reveal">
@@ -268,21 +291,24 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
         <div class="icon"><svg><use href="#i-utensils"/></svg></div>
         <p class="tag">Diet</p>
         <h3>Know what's on your plate.</h3>
-        <ul><li>Calories, macros and key vitamins</li><li>Allergens and additives from the label</li><li>Meal plans, recipes and a grocery list</li></ul>
+        <p>Real nutrition from the words you'd use anyway.</p>
+        <ul><li>Calories, macros and eight vitamins and minerals per meal</li><li>Allergens and additives read from the label</li><li>Your usual meals in one tap</li><li>Meal plans, recipes, your kitchen and a shared grocery list</li></ul>
       </article>
       <article class="pillar fitness reveal">
         <div class="pillar-shot"><picture><source type="image/webp" srcset="assets/shots/fitness-700.webp 700w, assets/shots/fitness-1206.webp 1206w" sizes="(max-width: 900px) calc(100vw - 40px), 360px"><img src="assets/shots/fitness-700.jpg" srcset="assets/shots/fitness-700.jpg 700w, assets/shots/fitness-1206.jpg 1206w" sizes="(max-width: 900px) calc(100vw - 40px), 360px" width="1206" height="1060" loading="lazy" decoding="async" alt="PEAK's Fitness tab: a lap at 19% of today's burn and the log box."></picture></div>
         <div class="icon"><svg><use href="#i-zap"/></svg></div>
         <p class="tag">Fitness</p>
         <h3>Every move counts.</h3>
-        <ul><li>Workouts and steps from Apple Health</li><li>Circuits, routes and timers with spoken cues</li><li>Programs built around your equipment</li></ul>
+        <p>From a walk with the dog to a heavy lift day.</p>
+        <ul><li>Workouts and steps from Apple Health</li><li>Burn worked out from your weight and real pace</li><li>Follow-along circuits and timers with spoken cues</li><li>GPS routes that keep tracking with the screen off</li></ul>
       </article>
       <article class="pillar wellness reveal">
         <div class="pillar-shot"><picture><source type="image/webp" srcset="assets/shots/wellness-700.webp 700w, assets/shots/wellness-1206.webp 1206w" sizes="(max-width: 900px) calc(100vw - 40px), 360px"><img src="assets/shots/wellness-700.jpg" srcset="assets/shots/wellness-700.jpg 700w, assets/shots/wellness-1206.jpg 1206w" sizes="(max-width: 900px) calc(100vw - 40px), 360px" width="1206" height="1060" loading="lazy" decoding="async" alt="PEAK's Wellness tab: a mountain sunrise check-in at Ascending and the gratitude box."></picture></div>
         <div class="icon"><svg><use href="#i-activity"/></svg></div>
         <p class="tag">Wellness</p>
         <h3>How you feel counts too.</h3>
-        <ul><li>A one-tap daily check-in</li><li>Gratitude, typed or spoken</li><li>Guided breathing, meditation and wind-down</li></ul>
+        <p>The part most trackers leave out.</p>
+        <ul><li>A one-tap check-in on a mountain sunrise</li><li>One line of gratitude a day, typed or spoken</li><li>Guided breathing, meditation and wind-down</li><li>Reflect: two minutes at night, one plan for tomorrow</li></ul>
       </article>
     </div>
   </div>
@@ -294,7 +320,12 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="reveal">
       <p class="eyebrow">Plans</p>
       <h2>Plan once. It logs itself.</h2>
-      <p class="lede" style="margin-top:16px">Let PEAK plan your meals and workouts, or bring your own. Each one logs itself when its time comes. Skip anything that didn't happen.</p>
+      <p class="lede" style="margin-top:16px">Let PEAK plan your meals and workouts, build them from your kitchen, or import a plan you already follow. Each item logs itself when its time comes.</p>
+      <ul class="points">
+        <li><svg><use href="#i-check"/></svg><span><b>Didn't happen?</b> Skip it, or ask your coach to move or swap it.</span></li>
+        <li><svg><use href="#i-calendar"/></svg><span><b>On your calendar,</b> with a reminder before each one.</span></li>
+        <li><svg><use href="#i-utensils"/></svg><span><b>Straight to your grocery list,</b> minus what's already in your kitchen.</span></li>
+      </ul>
     </div>
     <div class="plan reveal" aria-label="An example day from a plan">
       <div class="head"><b>Up next</b><span>Example</span></div>
@@ -311,10 +342,11 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="reveal">
       <p class="eyebrow">Progress</p>
       <h2>See what actually works.</h2>
-      <p class="lede" style="margin-top:16px">PEAK compares your days and tells you what moves you, in plain words.</p>
+      <p class="lede" style="margin-top:16px">Where you stand today, your week day by day, and what your own days say when PEAK compares them.</p>
       <ul class="points">
-        <li><svg><use href="#i-mountain"/></svg><span><b>Your goal,</b> and when you'll reach it at your pace.</span></li>
-        <li><svg><use href="#i-sparkles"/></svg><span><b>Your patterns,</b> drawn only from your logs.</span></li>
+        <li><svg><use href="#i-mountain"/></svg><span><b>Your goal,</b> and when you'll reach it at your current pace.</span></li>
+        <li><svg><use href="#i-calendar"/></svg><span><b>This week,</b> as seven small peaks. Tap a day to see everything you logged.</span></li>
+        <li><svg><use href="#i-sparkles"/></svg><span><b>Patterns</b> in plain words, like "On days you move, your mood averages higher."</span></li>
         <li><svg><use href="#i-repeat"/></svg><span><b>Two-week experiments</b> that show whether a change really helped.</span></li>
       </ul>
     </div>
@@ -330,12 +362,12 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
     <div class="section-head center reveal">
       <p class="eyebrow">Sharing</p>
       <h2>Climb together.</h2>
-      <p class="lede" style="margin-top:16px">Share only the summaries you choose. Never your meals, notes or weight.</p>
+      <p class="lede" style="margin-top:16px">Invite someone with a link and share only the summaries you choose, never your meals, notes or weight. Pause or stop anytime.</p>
     </div>
     <div class="connect-grid">
-      <div class="connect-card reveal"><svg><use href="#i-heart"/></svg><h3>Partners</h3><p>Streaks, challenges and a quick cheer.</p></div>
-      <div class="connect-card reveal"><svg><use href="#i-users"/></svg><h3>Communities</h3><p>Groups of up to 50, with a weekly leaderboard.</p></div>
-      <div class="connect-card reveal"><svg><use href="#i-user-check"/></svg><h3>Coaches</h3><p>A trainer or nutritionist who follows along.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-heart"/></svg><h3>Partners</h3><p>Keep each other on track with streaks, weekly challenges and a quick cheer.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-users"/></svg><h3>Communities</h3><p>Groups of up to 50 with a weekly leaderboard. Active days only, never calories or weight.</p></div>
+      <div class="connect-card reveal"><svg><use href="#i-user-check"/></svg><h3>Coaches</h3><p>A trainer or nutritionist who follows along and suggests goals you can accept or decline.</p></div>
     </div>
   </div>
 </section>
@@ -348,10 +380,10 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
       <h2>Private by default.</h2>
     </div>
     <div class="trust reveal">
-      <div><svg><use href="#i-shield"/></svg><h3>Never sold</h3><p>No ads. No data selling.</p></div>
-      <div><svg><use href="#i-pin"/></svg><h3>Location on request</h3><p>Used only when you ask. Never stored.</p></div>
-      <div><svg><use href="#i-download"/></svg><h3>Export anytime</h3><p>Everything, in one file.</p></div>
-      <div><svg><use href="#i-trash"/></svg><h3>Delete in one step</h3><p>Your account and all its data.</p></div>
+      <div><svg><use href="#i-shield"/></svg><h3>Never sold</h3><p>No ads, no data selling. Your logs are private to your account.</p></div>
+      <div><svg><use href="#i-pin"/></svg><h3>Location on request</h3><p>Weather and places nearby use it only when you ask. PEAK's servers never store it.</p></div>
+      <div><svg><use href="#i-download"/></svg><h3>Export anytime</h3><p>Everything PEAK stores about you, in one file.</p></div>
+      <div><svg><use href="#i-trash"/></svg><h3>Delete in one step</h3><p>Remove your account and all of its data, whenever you want.</p></div>
     </div>
   </div>
 </section>
@@ -368,6 +400,8 @@ if (/(^|[#&])type=recovery(&|$)|error_code=/.test(location.hash)) location.repla
       <details><summary>Where does the advice come from?</summary><p>From your own logs and goals, held to standards built on 30 named sources and reviewed by a dietitian, a strength coach and a mental-health professional. Answers are written by AI, so treat them as general guidance.</p></details>
       <details><summary>Does it work with Apple Health?</summary><p>Yes. It reads workouts, steps, sleep and resting heart rate, and saves your mindful minutes. Optional, and you can disconnect anytime.</p></details>
       <details><summary>How accurate is the nutrition?</summary><p>Foods come from USDA data and, for packaged foods, the label itself. Adjust any portion before or after you log.</p></details>
+      <details><summary>Can the coach log things for me?</summary><p>Yes. Tell it what you ate or how you moved, today or an earlier day, and it's logged with Undo and Change. If it's unsure, it asks one question first.</p></details>
+      <details><summary>Does it know about my allergies?</summary><p>Tell it once and its suggestions, menu picks and meal plans leave those foods out. Scanned labels flag them too. Always check the package or ask the restaurant.</p></details>
       <details><summary>Is this medical advice?</summary><p>No. PEAK is a wellness tool, not a medical device. Talk with a qualified professional about medical questions.</p></details>
     </div>
   </div>
