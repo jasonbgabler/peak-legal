@@ -386,3 +386,5 @@ section { position: relative; }
 .plan .pill.done { color: var(--diet); }
 @media (max-width: 900px) { .nav { gap: 20px; } }
 @media (max-width: 480px) { .also span { font-size: 13px; padding: 7px 12px; } .also .also-label { width: 100%; text-align: center; } }
+.got b { line-height: 1.4; }
+.got .acts { margin-top: 6px; }
